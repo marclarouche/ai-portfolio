@@ -1,0 +1,154 @@
+<!-- ============================================ -->
+<!-- HOW TO ADD AI PORTFOLIO SERVICE LINK TO index.html -->
+<!-- ============================================ -->
+
+<!-- ============================================ -->
+<!-- OPTION 1: ADD TO NAVIGATION MENU (Recommended) -->
+<!-- Find line 14-27 in index.html and UPDATE to: -->
+<!-- ============================================ -->
+
+    <nav>
+        <div class="container">
+            <div class="logo">ML</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ai-tools">AI Tools</a></li>
+                <li><a href="ai-portfolio-service.html" style="color: var(--accent); font-weight: 700;">Services 🚀</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- ============================================ -->
+<!-- OPTION 2: ADD A "SERVICES" SECTION BEFORE CONTACT -->
+<!-- Add this new section around line 260 (before the Contact section) -->
+<!-- ============================================ -->
+
+    <!-- Services Promo Section -->
+    <section style="padding: 6rem 2rem; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); text-align: center;">
+        <div style="max-width: 900px; margin: 0 auto; color: white;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem;">Want Your Own AI-Powered Portfolio?</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.95; line-height: 1.8;">
+                Stand out from hundreds of applicants with an interactive portfolio just like this one. 
+                AI chatbot, job fit checker, professional design—all customized for your background.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+                <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
+                    <strong style="display: block;">AI Chatbot</strong>
+                    <span style="font-size: 0.9rem; opacity: 0.9;">24/7 Answers</span>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                    <strong style="display: block;">Job Fit Checker</strong>
+                    <span style="font-size: 0.9rem; opacity: 0.9;">Instant Compatibility</span>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem 2rem; border-radius: 15px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+                    <strong style="display: block;">Professional Design</strong>
+                    <span style="font-size: 0.9rem; opacity: 0.9;">Custom Branding</span>
+                </div>
+            </div>
+            <a href="ai-portfolio-service.html" style="background: white; color: var(--primary); padding: 1.25rem 3rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; display: inline-block; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)'">
+                View Packages & Pricing →
+            </a>
+            <p style="margin-top: 2rem; font-size: 0.95rem; opacity: 0.85;">Starting at $497 • Ready in 7-10 days</p>
+        </div>
+    </section>
+
+
+<!-- ============================================ -->
+<!-- OPTION 3: ADD CALL-TO-ACTION IN HERO SECTION -->
+<!-- Find your hero section around line 30-48 and add this AFTER the main CTA buttons: -->
+<!-- ============================================ -->
+
+                <div class="cta-buttons">
+                    <a href="#ai-tools" class="btn btn-primary">💬 Chat With AI About Me</a>
+                    <a href="#ai-tools" class="btn btn-secondary">🎯 Check Job Fit</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                
+                <!-- ADD THIS NEW SECTION -->
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(13, 115, 119, 0.05); border-radius: 15px; border-left: 4px solid var(--secondary);">
+                    <p style="font-size: 0.95rem; color: var(--gray); margin-bottom: 0.75rem;">
+                        <strong style="color: var(--primary);">Like what you see?</strong> I can build one for you!
+                    </p>
+                    <a href="ai-portfolio-service.html" style="color: var(--accent); font-weight: 600; text-decoration: none; font-size: 1rem;">
+                        Get Your Own AI Portfolio →
+                    </a>
+                </div>
+
+
+<!-- ============================================ -->
+<!-- OPTION 4: ADD FLOATING BADGE (Optional but Eye-catching) -->
+<!-- Add this before the closing </body> tag (around line 338) -->
+<!-- ============================================ -->
+
+    <!-- Floating Services Badge -->
+    <div style="position: fixed; bottom: 2rem; right: 2rem; z-index: 999; animation: bounce 2s ease-in-out infinite;">
+        <style>
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            .services-badge:hover {
+                transform: scale(1.05);
+            }
+        </style>
+        <a href="ai-portfolio-service.html" class="services-badge" style="display: block; background: var(--gradient); color: white; padding: 1rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; box-shadow: 0 10px 30px rgba(13, 115, 119, 0.4); transition: all 0.3s ease;">
+            🚀 Build Your AI Portfolio
+        </a>
+    </div>
+
+
+<!-- ============================================ -->
+<!-- OPTION 5: ADD TO FOOTER -->
+<!-- Find your footer section (around line 320-336) and UPDATE to: -->
+<!-- ============================================ -->
+
+    <footer>
+        <p>&copy; 2026 Marc Larouche. All rights reserved.</p>
+        <p>Designed & Built by Marc Larouche</p>
+        
+        <!-- ADD THIS -->
+        <p style="margin-top: 1.5rem;">
+            <a href="ai-portfolio-service.html" style="color: var(--secondary); text-decoration: none; font-weight: 600;">
+                🚀 Get Your Own AI Portfolio - Starting at $497
+            </a>
+        </p>
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/marclarouche">in</a>
+            <a href="https://github.com/marclarouche">gh</a>
+            <a href="https://twitter.com/marclarouche">tw</a>
+        </div>
+    </footer>
+
+
+<!-- ============================================ -->
+<!-- RECOMMENDED IMPLEMENTATION -->
+<!-- ============================================ -->
+
+Use ALL of these for maximum visibility:
+1. ✅ Navigation Menu (Option 1) - Always visible
+2. ✅ Services Promo Section (Option 2) - Strong visual CTA
+3. ✅ Footer Link (Option 5) - Catches people at the end
+4. ⚠️ Optional: Floating Badge (Option 4) - Eye-catching but can be annoying
+
+Skip Option 3 (Hero CTA) - it might clutter your hero section.
+
+
+<!-- ============================================ -->
+<!-- IMPORTANT: UPDATE THE LINK IN AI-PORTFOLIO-SERVICE.HTML TOO -->
+<!-- ============================================ -->
+
+Make sure in your ai-portfolio-service.html file, the navigation logo links BACK to index.html:
+
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ML</a></div>
+
+This is already done in the file I created! ✅

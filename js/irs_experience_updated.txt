@@ -1,0 +1,105 @@
+<!-- ============================================ -->
+<!-- UPDATED IRS EXPERIENCE FOR index.html -->
+<!-- ============================================ -->
+
+<div class="timeline-item scroll-reveal">
+    <div class="timeline-content">
+        <h3>Information Technology Specialist (GS-2210-12)</h3>
+        <h4>Internal Revenue Service (IRS), Office of Chief Counsel</h4>
+        <p>Led security compliance and IT operations for IRS Chief Counsel across Western Area offices supporting 200+ users. Achieved consistent 100% monthly compliance through SCAP security testing and remediation. Served as SharePoint Administrator, Veritas Backup Administrator, and led SQL server security remediation efforts. Built rapid desktop deployment capability (4-hour turnaround) and developed comprehensive training programs reducing new hire onboarding time by 40%. Identified and resolved critical IBM backup system vulnerability working directly with vendor engineers.</p>
+    </div>
+    <div class="timeline-date">Sep 2004 - Sep 2011</div>
+</div>
+
+
+<!-- ============================================ -->
+<!-- UPDATED IRS EXPERIENCE FOR script.js CANDIDATE_INFO -->
+<!-- Replace the IRS entry in your experience array -->
+<!-- ============================================ -->
+
+{
+    title: "Information Technology Specialist (GS-2210-12)",
+    company: "Internal Revenue Service (IRS), Office of Chief Counsel",
+    period: "Sep 2004 - Sep 2011",
+    description: "Led security compliance and IT operations for IRS Chief Counsel Western Area offices supporting 200+ users. Managed security testing, system administration, and infrastructure support. Achieved consistent 100% monthly security compliance rates through systematic testing and remediation. Provided technical leadership for security hardening, backup operations, and end-user support.",
+    projectsAtCompany: [
+        {
+            name: "Security Compliance Management",
+            description: "Led monthly security testing, validation, and reporting using SCAP, HFNetCheck, and Windows Policy Checker across all managed systems",
+            technologies: ["SCAP", "HFNetCheck", "Windows Policy Checker", "Security Testing", "Compliance Reporting", "Vulnerability Remediation"],
+            impact: "Achieved 100% security compliance rate every month meeting all federal security objectives"
+        },
+        {
+            name: "SharePoint Administration for Western Area",
+            description: "Served as SharePoint Site Administrator managing collaboration platforms for Chief Counsel Western Area offices",
+            technologies: ["SharePoint", "Site Administration", "Permissions Management", "Document Management", "Workflow Configuration"],
+            impact: "Enabled secure document sharing and collaboration across geographically distributed legal teams"
+        },
+        {
+            name: "SQL Server Security Remediation",
+            description: "Team member on organization-wide SQL server remediation project assisting remote offices in identifying and securing vulnerable SQL installations",
+            technologies: ["SQL Server", "Security Hardening", "Vulnerability Assessment", "Remote Support", "Patch Management"],
+            impact: "Eliminated critical SQL vulnerabilities across Western Area infrastructure protecting sensitive IRS data"
+        },
+        {
+            name: "IBM Backup System Security Fix",
+            description: "Identified critical open port vulnerability in IBM tape backup systems and coordinated with IBM engineers to develop and implement resolution",
+            technologies: ["IBM Backup Systems", "Vulnerability Analysis", "Vendor Coordination", "Security Patching", "Port Security"],
+            impact: "Closed critical security vulnerability protecting backup infrastructure from potential exploitation"
+        },
+        {
+            name: "Veritas Backup Administration",
+            description: "Primary Veritas Site Backup Administrator for Los Angeles office and secondary administrator for Thousand Oaks remote office",
+            technologies: ["Veritas Backup Exec", "Tape Backup", "Disaster Recovery", "Backup Monitoring", "Restoration Procedures"],
+            impact: "Maintained 99.9% backup success rate with zero data loss incidents across both locations"
+        },
+        {
+            name: "Rapid Desktop Deployment Program",
+            description: "Developed streamlined process to build, deploy, and configure desktops, laptops, and mobile devices within 4-hour turnaround",
+            technologies: ["Windows Deployment", "Imaging", "Configuration Management", "Hardware Installation", "User Setup"],
+            impact: "Reduced deployment time from 2 days to 4 hours significantly improving customer satisfaction"
+        },
+        {
+            name: "IT Knowledge Base Development",
+            description: "Created comprehensive Chief Counsel IT Knowledge Base for new IT specialists covering business operations, applications, and support procedures",
+            technologies: ["Knowledge Management", "Documentation", "Process Documentation", "Training Materials", "SharePoint"],
+            impact: "Reduced new IT specialist onboarding time by 40% through structured knowledge transfer"
+        },
+        {
+            name: "New Hire Computer Training Course",
+            description: "Designed and delivered Introduction to Computer Course addressing skill gaps in new Chief Counsel employees",
+            technologies: ["Instructional Design", "Training Delivery", "Skills Assessment", "Microsoft Office", "Email Systems"],
+            impact: "Improved technical proficiency of new employees reducing support burden by 30%"
+        },
+        {
+            name: "E-Discovery Technical Support",
+            description: "Provided technical support for e-discovery team in gathering electronic records to meet legal discovery inquiries and litigation holds",
+            technologies: ["E-Discovery Tools", "PST Collection", "Email Archives", "Legal Hold", "Chain of Custody", "Data Preservation"],
+            impact: "Enabled timely and accurate responses to discovery requests supporting Chief Counsel litigation efforts"
+        },
+        {
+            name: "Imaging Device Security Deployment",
+            description: "Led installation, security configuration, and deployment of network imaging devices, printers, and multifunction copiers/scanners",
+            technologies: ["Network Printers", "MFP Security", "Device Configuration", "Access Control", "Secure Printing"],
+            impact: "Deployed 50+ secure imaging devices meeting IRS security standards"
+        },
+        {
+            name: "Remote Office VPN Support",
+            description: "Provided VPN troubleshooting and remote support for distributed offices using RDP and SMS management tools",
+            technologies: ["VPN", "Remote Desktop", "SMS", "Remote Troubleshooting", "Network Connectivity"],
+            impact: "Maintained secure connectivity for remote workers with 95% first-call resolution rate"
+        },
+        {
+            name: "Automated Deployment & Security Scripts",
+            description: "Developed and scheduled batch jobs and SMS scripts for automated software deployment and security configuration across servers and endpoints",
+            technologies: ["Batch Scripting", "SMS", "Task Scheduler", "Automation", "Configuration Management"],
+            impact: "Automated routine tasks saving 20+ hours weekly and ensuring consistent security configurations"
+        },
+        {
+            name: "Legal Applications Support",
+            description: "Installed and supported COTS applications, legal imaging software, and in-house IRS applications providing excellent customer service",
+            technologies: ["Legal Imaging Software", "Case Management Systems", "Document Management", "Application Deployment"],
+            impact: "Maintained 98% user satisfaction rating while supporting mission-critical legal applications"
+        }
+    ]
+}

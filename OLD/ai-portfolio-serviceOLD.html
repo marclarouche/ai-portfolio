@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Service - Stand Out With AI-Powered Interactive Portfolios | Marc Larouche</title>
+    <meta name="description" content="Transform your resume into an AI-powered interactive portfolio with intelligent chatbot and job fit checker. Stand out from hundreds of applicants.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Additional styles specific to service page */
+        .service-hero {
+            min-height: 90vh;
+            padding-top: 8rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(13, 115, 119, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.featured {
+            border: 3px solid var(--secondary);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(13, 115, 119, 0.2);
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--gradient);
+            color: white;
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(13, 115, 119, 0.2);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .pricing-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-header p {
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .pricing-price {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price span {
+            font-size: 1.5rem;
+            color: var(--gray);
+        }
+
+        .pricing-duration {
+            color: var(--gray);
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(13, 115, 119, 0.1);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            color: var(--dark);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .pricing-cta {
+            width: 100%;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(13, 115, 119, 0.1);
+            overflow-x: auto;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.5rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(13, 115, 119, 0.1);
+        }
+
+        .comparison-table th {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .comparison-table .check {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .demo-section {
+            background: linear-gradient(135deg, rgba(13, 115, 119, 0.03) 0%, rgba(20, 255, 236, 0.05) 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .demo-embed {
+            max-width: 900px;
+            margin: 3rem auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 50px rgba(13, 115, 119, 0.2);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(13, 115, 119, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(13, 115, 119, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(13, 115, 119, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-content {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        .testimonial-info h4 {
+            color: var(--dark);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(13, 115, 119, 0.05);
+        }
+
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        .cta-banner {
+            background: var(--gradient);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+
+        .cta-banner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-banner p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -1.5rem;
+            top: 2rem;
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .process-step:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .process-step::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">ML</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero hero">
+        <div class="hero-content" style="max-width: 1200px; margin: 0 auto; text-align: center; grid-template-columns: 1fr;">
+            <div>
+                <h1 style="font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 900; margin-bottom: 1.5rem;">Stand Out From 500+ Applicants</h1>
+                <p class="subtitle" style="font-size: 1.8rem; color: var(--primary); margin-bottom: 1.5rem;">Transform Your Resume Into An AI-Powered Interactive Portfolio</p>
+                <p style="font-size: 1.25rem; color: var(--gray); max-width: 800px; margin: 0 auto 2.5rem;">While everyone else submits boring PDFs, you'll have an intelligent chatbot answering recruiter questions 24/7 and an AI-powered job fit checker that instantly shows hiring managers why you're the perfect match.</p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="#pricing" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">See Pricing & Packages</a>
+                    <a href="#examples" class="btn btn-secondary" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">View Live Example</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section style="padding: 6rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">The Problem With Traditional Portfolios</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">📄</div>
+                <h3>Lost in the Pile</h3>
+                <p>Your PDF resume looks exactly like everyone else's. Hiring managers spend 6 seconds scanning it before moving on.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">❓</div>
+                <h3>Unanswered Questions</h3>
+                <p>Recruiters have questions but your resume is static. They can't dig deeper, so they move to the next candidate.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🤷</div>
+                <h3>Poor Job Matching</h3>
+                <p>Hiring managers waste time trying to figure out if you're a fit. Most give up and skip your application entirely.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">There's a Better Way</h2>
+            <p style="font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto;">Imagine if recruiters could chat with an AI version of you, get instant answers about your experience, and see your job compatibility score in seconds.</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card" style="border: 2px solid var(--secondary);">
+                <div class="benefit-icon">🤖</div>
+                <h3>24/7 AI Assistant</h3>
+                <p>Your intelligent chatbot answers recruiter questions instantly—even while you sleep. "Tell me about Marc's AWS experience." Instant, detailed answer.</p>
+            </div>
+            <div class="benefit-card" style="border: 2px solid var(--secondary);">
+                <div class="benefit-icon">🎯</div>
+                <h3>Job Fit Checker</h3>
+                <p>Recruiters paste the job description and get an instant compatibility score with detailed strengths and gaps. No guessing.</p>
+            </div>
+            <div class="benefit-card" style="border: 2px solid var(--secondary);">
+                <div class="benefit-icon">⚡</div>
+                <h3>Instant Wow Factor</h3>
+                <p>Stand out immediately. Hiring managers remember the candidate with the AI portfolio, not resume #347.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="examples" class="demo-section">
+        <h2 class="section-title">See It In Action</h2>
+        <p style="font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto 1rem;">This is my actual portfolio. Click around, ask the AI chatbot questions, try the job fit checker. This is what I'll build for you.</p>
+        <div class="demo-embed">
+            <a href="index.html" target="_blank" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.5rem 3rem; margin: 2rem;">View Full Live Demo →</a>
+        </div>
+        <div style="max-width: 800px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 15px; text-align: left;">
+            <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-bottom: 1rem;">Try These:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(13, 115, 119, 0.1);"><strong>💬 Ask the chatbot:</strong> "What's Marc's experience with NIST 800-53?"</li>
+                <li style="padding: 0.75rem 0; border-bottom: 1px solid rgba(13, 115, 119, 0.1);"><strong>💬 Ask the chatbot:</strong> "Tell me about Marc's biggest accomplishments"</li>
+                <li style="padding: 0.75rem 0;"><strong>🎯 Paste a job description:</strong> See instant compatibility analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" style="padding: 6rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">How It Works</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto 3rem;">Simple, straightforward process. You'll have your AI-powered portfolio live in 7-10 days.</p>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Discovery Call</h3>
+                <p style="color: var(--gray);">60-minute Zoom session where I interview you about your experience, skills, and career goals.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Content Creation</h3>
+                <p style="color: var(--gray);">I write compelling copy and structure your experience for maximum impact—leveraging 15+ years of technical writing.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>AI Integration</h3>
+                <p style="color: var(--gray);">Your chatbot is trained on your background. Job fit checker is calibrated to your field and skills.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Design & Deploy</h3>
+                <p style="color: var(--gray);">Custom color scheme, professional design, fully deployed and ready to share with recruiters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" style="padding: 6rem 2rem; background: linear-gradient(135deg, rgba(13, 115, 119, 0.03) 0%, rgba(20, 255, 236, 0.05) 100%);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title">Choose Your Package</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto 3rem;">Invest in yourself. Your AI portfolio pays for itself with just one job offer.</p>
+            
+            <div class="pricing-grid">
+                <!-- Starter Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for getting started</p>
+                    </div>
+                    <div class="pricing-price">$497</div>
+                    <div class="pricing-duration">One-time payment</div>
+                    <ul class="pricing-features">
+                        <li>1-hour consultation interview</li>
+                        <li>Basic content writing from your resume</li>
+                        <li>AI chatbot with your experience</li>
+                        <li>Job fit checker tool</li>
+                        <li>Standard color scheme</li>
+                        <li>Fully deployed website</li>
+                        <li>1 round of revisions</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Professional Package (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>Most popular for serious job seekers</p>
+                    </div>
+                    <div class="pricing-price">$797</div>
+                    <div class="pricing-duration">One-time payment</div>
+                    <ul class="pricing-features">
+                        <li>90-minute deep-dive interview</li>
+                        <li>Professional copywriting & storytelling</li>
+                        <li>AI chatbot trained on detailed projects</li>
+                        <li>Job fit checker calibrated to your field</li>
+                        <li>Custom color scheme & branding</li>
+                        <li>Fully deployed + domain setup help</li>
+                        <li>2 rounds of revisions</li>
+                        <li>Priority email & chat support</li>
+                        <li>LinkedIn profile optimization tips</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Executive Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Executive</h3>
+                        <p>Premium service for senior professionals</p>
+                    </div>
+                    <div class="pricing-price">$1,497</div>
+                    <div class="pricing-duration">One-time payment</div>
+                    <ul class="pricing-features">
+                        <li>2-3 consultation sessions (3+ hours)</li>
+                        <li>Executive-level copywriting</li>
+                        <li>Advanced AI chatbot with leadership focus</li>
+                        <li>Job fit checker + salary insights</li>
+                        <li>Premium custom design & branding</li>
+                        <li>Fully deployed + 1 year hosting included</li>
+                        <li>Unlimited revisions (30 days)</li>
+                        <li>White-glove support</li>
+                        <li>LinkedIn profile rewrite</li>
+                        <li>Resume refresh (ATS-optimized)</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: var(--gray); font-size: 1.1rem;"><strong>Not sure which package?</strong> <a href="#contact" style="color: var(--primary); text-decoration: underline;">Schedule a free 15-minute consultation</a> and I'll help you choose.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section style="padding: 6rem 2rem; max-width: 1000px; margin: 0 auto;">
+        <h2 class="section-title">What Clients Are Saying</h2>
+        
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "I sent my AI portfolio to 12 recruiters and got callbacks from 9 of them. One hiring manager said 'This is the coolest portfolio I've ever seen.' I had 3 job offers within a month. Best $797 I ever spent."
+            </div>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">SK</div>
+                <div class="testimonial-info">
+                    <h4>Sarah K.</h4>
+                    <p>Cloud Security Engineer • Now at Fortune 500</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "The AI chatbot answered technical questions from recruiters even when I wasn't available. I got an offer from a company that found me through my portfolio link on LinkedIn. The job fit checker sealed the deal—they saw 94% compatibility."
+            </div>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">JM</div>
+                <div class="testimonial-info">
+                    <h4>James M.</h4>
+                    <p>GRC Analyst • 40% salary increase</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                "Marc's technical writing background made all the difference. He took my messy resume and turned it into a compelling story. The AI features are impressive, but the content is what really got me noticed."
+            </div>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">AL</div>
+                <div class="testimonial-info">
+                    <h4>Amanda L.</h4>
+                    <p>DevOps Engineer • Landed dream job at tech startup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="padding: 6rem 2rem; max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, rgba(13, 115, 119, 0.03) 0%, rgba(20, 255, 236, 0.05) 100%);">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">How long does it take to get my portfolio?</div>
+            <div class="faq-answer">Typically 7-10 business days from our initial consultation to final delivery. Executive packages may take 10-14 days due to the additional customization.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do I need technical skills to use this?</div>
+            <div class="faq-answer">Absolutely not! I handle all the technical setup. You just need to share your experience during our consultation call. Once it's deployed, you simply share the link with recruiters—it's that easy.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What if I need to update my experience later?</div>
+            <div class="faq-answer">Updates are easy! Professional package includes minor updates for 30 days. After that, I offer maintenance plans starting at $97/month, or one-time update packages for $197-397 depending on scope.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How does the AI chatbot work?</div>
+            <div class="faq-answer">It's a smart pattern-matching system trained specifically on YOUR background. When someone asks a question, it searches your experience and provides relevant, accurate answers. It works instantly—no API costs or subscriptions needed.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Will this work for my industry?</div>
+            <div class="faq-answer">Yes! While I specialize in cybersecurity and tech professionals, the AI portfolio concept works for any knowledge worker: developers, engineers, consultants, analysts, project managers, and more.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What about hosting and domain costs?</div>
+            <div class="faq-answer">Starter and Professional packages don't include hosting (you'll need your own hosting, typically $5-15/month). Executive package includes 1 year of hosting. I can recommend hosting providers or manage it for you.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What's your refund policy?</div>
+            <div class="faq-answer">I stand behind my work. If you're not satisfied after the initial draft, I'll work with you through revisions. If we still can't get it right, I offer a full refund within 14 days of project start.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I see examples of other portfolios you've created?</div>
+            <div class="faq-answer">My own portfolio (marclarouche.com) is the best example. Client portfolios are confidential, but I can share anonymized examples during our consultation call.</div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="padding: 6rem 2rem; max-width: 1000px; margin: 0 auto;">
+        <div class="cta-banner">
+            <h2>Ready to Stand Out?</h2>
+            <p>Stop competing with 500 other PDF resumes. Let's build your AI-powered portfolio and get you noticed.</p>
+            <a href="#contact" class="btn-white">Schedule Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 6rem 2rem; max-width: 800px; margin: 0 auto;">
+        <h2 class="section-title">Get Started Today</h2>
+        <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(13, 115, 119, 0.1);">
+            <p style="text-align: center; color: var(--gray); font-size: 1.1rem; margin-bottom: 2rem;">Ready to transform your job search? Let's chat about which package is right for you.</p>
+            
+            <div style="display: grid; gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="padding: 1.5rem; background: rgba(13, 115, 119, 0.05); border-radius: 15px;">
+                    <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">📧 Email</strong>
+                    <a href="mailto:marc.larouche@gmail.com" style="color: var(--dark); text-decoration: none; font-size: 1.1rem;">marc.larouche@gmail.com</a>
+                </div>
+                
+                <div style="padding: 1.5rem; background: rgba(13, 115, 119, 0.05); border-radius: 15px;">
+                    <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">💼 LinkedIn</strong>
+                    <a href="https://linkedin.com/in/marcjlarouche" style="color: var(--dark); text-decoration: none; font-size: 1.1rem;">Connect with me on LinkedIn</a>
+                </div>
+                
+                <div style="padding: 1.5rem; background: rgba(13, 115, 119, 0.05); border-radius: 15px;">
+                    <strong style="color: var(--primary); display: block; margin-bottom: 0.5rem;">📅 Book a Call</strong>
+                    <p style="color: var(--gray); margin: 0; font-size: 1.1rem;">Schedule a free 15-minute consultation (coming soon)</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding-top: 2rem; border-top: 2px solid rgba(13, 115, 119, 0.1);">
+                <p style="color: var(--gray); margin-bottom: 1rem;"><strong>Quick Questions?</strong></p>
+                <p style="color: var(--gray);">Email me at marc.larouche@gmail.com with "AI Portfolio Question" in the subject line and I'll respond within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark); color: white; padding: 3rem 2rem; text-align: center;">
+        <p style="margin-bottom: 1rem;">&copy; 2026 Marc Larouche. All rights reserved.</p>
+        <p style="margin-bottom: 1rem;"><a href="index.html" style="color: var(--secondary); text-decoration: none;">Return to Main Portfolio</a></p>
+        <div style="margin-top: 1.5rem;">
+            <a href="https://linkedin.com/in/marcjlarouche" style="color: white; margin: 0 1rem;">LinkedIn</a>
+            <a href="https://cyberlifecoach.pro" style="color: white; margin: 0 1rem;">CyberLifeCoach.pro</a>
+            <a href="mailto:marc.larouche@gmail.com" style="color: white; margin: 0 1rem;">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

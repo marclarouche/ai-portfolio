@@ -1,0 +1,567 @@
+Perfect! Here's your comprehensive Client Intake Questionnaire! 📋
+🎯 What I Created:
+A 68-question intake form organized into 12 sections:
+Sections:
+
+✅ Basic Information (6 questions) - Name, email, LinkedIn, domain
+✅ Current Situation & Goals (7 questions) - Job search status, targets, unique value
+✅ Professional Experience (14 questions) - Current + previous roles with accomplishments
+✅ Skills & Expertise (4 questions) - Technical skills, certs, soft skills
+✅ Projects & Achievements (3 questions) - Major projects with impact
+✅ Education (4 questions) - Degrees, training
+✅ Personal Brand (6 questions) - Resume upload, LinkedIn, portfolio
+✅ Design Preferences (4 questions) - Colors, style, inspiration
+✅ Chatbot Configuration (4 questions) - Topics, salary, availability
+✅ Job Fit Checker (3 questions) - Key skills, experience level
+✅ Package Selection (3 questions) - Which package, timeline, budget
+✅ Additional Info (3 questions) - Special situations, referral source
+
+💡 Key Features:
+✅ Comprehensive - Gets ALL the info you need upfront
+✅ Saves time - 20-30 minute form vs 2-hour call
+✅ Structured - Easy to extract info for portfolio
+✅ Professional - Shows you're organized
+✅ Qualifying - Budget confirmation weeds out tire-kickers
+🚀 Implementation Options:
+OPTION 1: Google Forms ⭐ RECOMMENDED TO START
+
+FREE forever
+Easy to create
+Responses auto-save to spreadsheet
+Can embed on website
+Start here!
+
+OPTION 2: TypeForm
+
+$29/month
+Beautiful, conversational UI
+Logic jumps (skip questions)
+Better user experience
+Upgrade to this once you have paying clients
+
+OPTION 3: Airtable
+
+FREE tier available
+Database backend
+Good for pipeline management
+More complex
+
+OPTION 4: Custom Website Form
+
+Most professional
+Requires coding
+Full control
+
+📊 How This Saves You Time:
+Without Questionnaire:
+
+90-120 minute discovery call
+30 minutes of back-and-forth emails
+Missing information causing delays
+Total: 2-3 hours
+
+With Questionnaire:
+
+Client fills it out (their time, not yours)
+30-minute clarification call (optional)
+You review form (20 minutes)
+Total: 50 minutes of YOUR time
+
+You save 60-90 minutes per client!
+✅ Next Steps:
+
+Create Google Form with these questions
+Test it yourself - fill it out as if you're a client
+Send to a friend for feedback
+Add link to your ai-portfolio-service.html page
+Refine based on first few submissions
+
+Want me to help you set up the Google Form? Or should we move on to creating the Standard Workflow/Checklist next? 🎯
+
+
+<!-- ============================================ -->
+<!-- AI PORTFOLIO SERVICE - CLIENT INTAKE QUESTIONNAIRE -->
+<!-- ============================================ -->
+<!-- This can be delivered as: -->
+<!-- 1. Google Form (easiest - I'll provide the questions) -->
+<!-- 2. TypeForm (professional, paid) -->
+<!-- 3. Embedded HTML form on your site -->
+<!-- 4. PDF/Word doc they fill out -->
+<!-- ============================================ -->
+
+==============================================
+AI PORTFOLIO SERVICE - CLIENT INTAKE FORM
+==============================================
+
+Thank you for your interest in getting an AI-powered interactive portfolio! 
+
+This questionnaire helps me understand your background and goals so I can create the most effective portfolio for you. Please be as detailed as possible - the more information you provide, the better your portfolio will be.
+
+⏱️ Expected time to complete: 20-30 minutes
+📝 Save your work as you go - you can complete this in multiple sessions
+
+
+==============================================
+SECTION 1: BASIC INFORMATION
+==============================================
+
+1. Full Name *
+   [Text field]
+
+2. Email Address *
+   [Email field]
+
+3. Phone Number
+   [Phone field]
+
+4. LinkedIn Profile URL *
+   [URL field]
+
+5. Current Location (City, State/Country)
+   [Text field]
+
+6. Preferred Domain Name (if you have one)
+   Example: johnsmith.com, jsmith-portfolio.com
+   [Text field]
+   
+   ☐ I don't have a domain yet (I need help choosing one)
+
+
+==============================================
+SECTION 2: CURRENT SITUATION & GOALS
+==============================================
+
+7. Current Employment Status *
+   ☐ Employed (actively looking)
+   ☐ Employed (passively open to opportunities)
+   ☐ Unemployed (actively job searching)
+   ☐ Career transition
+   ☐ Freelancer/Consultant
+   ☐ Other: __________
+
+8. Primary Goal for This Portfolio * (Check all that apply)
+   ☐ Land a new job
+   ☐ Get more freelance/consulting clients
+   ☐ Career transition to a new field
+   ☐ Promotion/internal positioning
+   ☐ Personal branding
+   ☐ Showcase my expertise
+   ☐ Other: __________
+
+9. Target Job Titles/Roles *
+   What specific roles are you targeting?
+   [Text area - 3 lines]
+   Example: "Senior Cybersecurity Analyst, GRC Manager, Information Security Consultant"
+
+10. Target Industries *
+    What industries/sectors are you targeting?
+    [Text area - 3 lines]
+    Example: "Financial services, healthcare, government contracting"
+
+11. Geographic Targets
+    Where are you looking for opportunities?
+    ☐ Remote only
+    ☐ Hybrid
+    ☐ On-site in: __________
+    ☐ Open to relocation
+    ☐ Specific locations: __________
+
+12. Salary Range Target (Optional - helps calibrate messaging)
+    [Text field]
+    Example: "$120K-150K" or "Open to market rate"
+
+13. What Makes You Stand Out? *
+    What's your unique value proposition? What makes you different from other candidates?
+    [Text area - 5 lines]
+    Example: "15 years in federal cybersecurity + technical writing background + building AI tools"
+
+
+==============================================
+SECTION 3: PROFESSIONAL EXPERIENCE
+==============================================
+
+14. Total Years of Professional Experience *
+    [Dropdown: <1, 1-3, 3-5, 5-10, 10-15, 15-20, 20+]
+
+15. Current/Most Recent Job Title *
+    [Text field]
+
+16. Current/Most Recent Company *
+    [Text field]
+
+17. Dates at Current/Most Recent Job *
+    [Text field]
+    Format: "Jan 2020 - Present" or "Jan 2020 - Dec 2023"
+
+18. Brief Description of Current/Most Recent Role *
+    What do/did you do? What are/were your main responsibilities?
+    [Text area - 5 lines]
+
+19. Top 3-5 Accomplishments at Current/Most Recent Job *
+    Be specific! Include numbers, metrics, impact.
+    [Text area - 10 lines]
+    
+    Example:
+    • Led RMF implementation achieving ATO for 12 critical systems
+    • Reduced security vulnerabilities by 85% through systematic remediation
+    • Managed $2M security budget with zero overruns
+
+20. Key Technologies/Tools Used *
+    List all relevant technologies, tools, frameworks, platforms
+    [Text area - 5 lines]
+    Example: "NIST 800-53, AWS, Azure, Nessus, SCAP, Python, PowerShell, etc."
+
+
+--- PREVIOUS POSITIONS ---
+
+21. Do you want to include previous positions? *
+    ☐ Yes - I'll provide details for 2-3 previous roles
+    ☐ No - Just focus on my current/most recent role
+    ☐ Yes - I have 4+ previous roles to include
+
+[IF YES, REPEAT QUESTIONS 15-20 FOR EACH PREVIOUS POSITION]
+
+Position #2:
+22. Job Title [Text field]
+23. Company [Text field]
+24. Dates [Text field]
+25. Description [Text area]
+26. Top Accomplishments [Text area]
+27. Key Technologies [Text area]
+
+Position #3:
+28. Job Title [Text field]
+29. Company [Text field]
+30. Dates [Text field]
+31. Description [Text area]
+32. Top Accomplishments [Text area]
+33. Key Technologies [Text area]
+
+[Add more positions as needed]
+
+
+==============================================
+SECTION 4: SKILLS & EXPERTISE
+==============================================
+
+34. Technical Skills *
+    List all technical skills, technologies, frameworks, tools you're proficient in
+    [Text area - 10 lines]
+    
+    Organize by category if possible. Example:
+    
+    Security & Compliance: NIST 800-53, RMF, ISO 27001, FISMA, SOC2
+    Cloud: AWS (EC2, S3, Lambda), Azure, GCP
+    Tools: Nessus, Splunk, Wireshark, Burp Suite
+    Programming: Python, PowerShell, Bash
+    etc.
+
+35. Certifications *
+    List ALL certifications (active and expired)
+    [Text area - 5 lines]
+    Format: "CISSP (Active), CEH v12 (Active), Security+ (Expired 2020)"
+
+36. Soft Skills / Leadership Skills
+    What are your key soft skills?
+    [Text area - 3 lines]
+    Example: "Team leadership, stakeholder communication, project management, technical writing"
+
+37. Languages Spoken
+    [Text field]
+    Example: "English (Native), Spanish (Conversational)"
+
+
+==============================================
+SECTION 5: PROJECTS & ACHIEVEMENTS
+==============================================
+
+38. Major Projects You've Worked On *
+    List 5-10 significant projects from your career. These will be featured prominently!
+    
+    For EACH project, provide:
+    • Project Name
+    • Brief Description (2-3 sentences)
+    • Technologies Used
+    • Your Role
+    • Impact/Results (with numbers if possible)
+    
+    [Text area - 20 lines]
+    
+    Example:
+    
+    PROJECT 1: Enterprise Cloud Migration
+    Description: Led migration of 50+ applications from on-prem to AWS
+    Technologies: AWS (EC2, RDS, S3), Terraform, CloudFormation
+    Role: Lead Cloud Architect
+    Impact: Reduced infrastructure costs by 40%, improved uptime to 99.9%
+    
+    PROJECT 2: Security Compliance Program
+    Description: Built from-scratch compliance program for SOC2 Type II
+    Technologies: GRC tools, NIST frameworks, automated scanning
+    Role: Compliance Lead
+    Impact: Achieved SOC2 certification in 6 months, zero audit findings
+
+39. Awards, Recognition, or Notable Achievements
+    Any special recognition, awards, publications, speaking engagements?
+    [Text area - 5 lines]
+    Example: "Presenter at RSA Conference 2023, Published in Security Magazine"
+
+40. Open Source Contributions / Side Projects
+    Any GitHub repos, personal projects, apps, tools you've built?
+    [Text area - 5 lines]
+
+
+==============================================
+SECTION 6: EDUCATION
+==============================================
+
+41. Highest Degree Earned *
+    [Dropdown: High School, Associates, Bachelors, Masters, PhD, Other]
+
+42. Degree Details *
+    [Text field]
+    Format: "MBA in Information Technology - University Name (Year)"
+
+43. Additional Degrees
+    [Text area - 3 lines]
+
+44. Relevant Coursework or Training
+    Any bootcamps, specialized training, courses?
+    [Text area - 3 lines]
+
+
+==============================================
+SECTION 7: PERSONAL BRAND & PRESENCE
+==============================================
+
+45. Current Resume/CV *
+    Please upload your current resume
+    [File upload - PDF, DOCX]
+
+46. LinkedIn Profile Status
+    ☐ Fully up-to-date and polished
+    ☐ Somewhat outdated
+    ☐ Needs major work
+    ☐ Don't have one
+
+47. Personal Website/Portfolio (if you have one)
+    [URL field]
+
+48. GitHub Profile
+    [URL field]
+
+49. Professional Blog or Writing
+    Do you write technical content? Where?
+    [Text area - 3 lines]
+    Example: "Medium blog about cybersecurity, published 15 articles"
+
+50. Social Media Presence
+    Any professional Twitter, YouTube, etc.?
+    [Text area - 2 lines]
+
+
+==============================================
+SECTION 8: DESIGN PREFERENCES
+==============================================
+
+51. Color Scheme Preference *
+    ☐ Professional Blues/Grays (conservative, corporate)
+    ☐ Bold & Modern (vibrant colors, stands out)
+    ☐ Tech/Cybersecurity Theme (dark mode, neon accents)
+    ☐ Minimal & Clean (neutral, lots of white space)
+    ☐ Match my company/personal brand colors
+    ☐ I trust your judgment
+
+52. If you have specific brand colors, list them here
+    [Text field]
+    Example: "#0D7377 (teal), #FF6B35 (orange)"
+
+53. Websites You Like (Design Inspiration)
+    List 2-3 websites whose design you admire
+    [Text area - 3 lines]
+    Example: "stripe.com (clean, modern), attlassian.com (bold colors)"
+
+54. Personal Photo/Headshot
+    Do you want to include a professional photo?
+    ☐ Yes - I'll provide one (upload below)
+    ☐ No - Use my initials in a styled avatar
+    ☐ Not sure - you decide
+    
+    [File upload - JPG, PNG]
+
+
+==============================================
+SECTION 9: CHATBOT CONFIGURATION
+==============================================
+
+55. Key Topics for Your AI Chatbot *
+    What should recruiters be able to ask your chatbot about?
+    [Checkboxes - select all that apply]
+    ☐ Technical skills and expertise
+    ☐ Specific technologies (AWS, Python, etc.)
+    ☐ Project experience
+    ☐ Work history
+    ☐ Leadership experience
+    ☐ Certifications
+    ☐ Education background
+    ☐ Career goals and interests
+    ☐ Availability and relocation
+    ☐ Salary expectations
+    ☐ Why hire me / value proposition
+    ☐ Other: __________
+
+56. Salary Discussion *
+    How should the chatbot handle salary questions?
+    ☐ Provide my target range: $______ - $______
+    ☐ Say "Open to discussion based on role and responsibilities"
+    ☐ Redirect to contact me directly
+    ☐ Say "Negotiable based on total compensation package"
+
+57. Availability *
+    What should the chatbot say about your availability?
+    ☐ Immediately available
+    ☐ Available with 2 weeks notice
+    ☐ Available with 30 days notice
+    ☐ Currently employed, open to right opportunity
+    ☐ Available starting [date]: __________
+
+58. Geographic Flexibility *
+    What should the chatbot say about relocation?
+    ☐ Remote only, not open to relocation
+    ☐ Open to remote or hybrid
+    ☐ Open to relocation anywhere
+    ☐ Open to relocation in: __________
+    ☐ Currently in [location], prefer to stay local
+
+
+==============================================
+SECTION 10: JOB FIT CHECKER CONFIGURATION
+==============================================
+
+59. Primary Skill Keywords *
+    List the TOP 20-30 keywords that should be matched in job descriptions
+    These are the technologies, frameworks, methodologies you want to be matched on
+    [Text area - 10 lines]
+    
+    Example: NIST 800-53, RMF, AWS, Azure, Python, CISSP, Risk Assessment, 
+    Compliance, Security Audits, Vulnerability Management, etc.
+
+60. Years of Experience to Highlight *
+    [Text field]
+    Example: "15+ years in cybersecurity" or "10 years in cloud architecture"
+
+61. Ideal Job Titles the Fit Checker Should Match
+    [Text area - 3 lines]
+    Example: "Security Architect, CISO, GRC Manager, Senior Security Engineer"
+
+
+==============================================
+SECTION 11: PACKAGE SELECTION
+==============================================
+
+62. Which Package Are You Interested In? *
+    ☐ Starter Package ($497)
+    ☐ Professional Package ($797) - MOST POPULAR
+    ☐ Executive Package ($1,497)
+    ☐ Not sure yet - let's discuss
+
+63. Timeline *
+    When do you need this completed?
+    ☐ ASAP - I'm actively job searching
+    ☐ Within 2 weeks
+    ☐ Within 1 month
+    ☐ Flexible - no rush
+
+64. Budget Confirmation *
+    ☐ Yes, I'm ready to proceed at the selected package price
+    ☐ I need to discuss pricing/payment options
+    ☐ I'm still deciding
+
+
+==============================================
+SECTION 12: ADDITIONAL INFORMATION
+==============================================
+
+65. Is there anything unique about your situation?
+    Career gaps? Career change? Military background? Returning to workforce?
+    [Text area - 5 lines]
+
+66. Anything else I should know?
+    Any special requests, concerns, or information I should be aware of?
+    [Text area - 5 lines]
+
+67. How did you hear about this service? *
+    ☐ Your main portfolio website (marclarouche.com)
+    ☐ CyberLifeCoach.pro
+    ☐ LinkedIn
+    ☐ Referral from: __________
+    ☐ Other: __________
+
+
+==============================================
+SUBMISSION
+==============================================
+
+68. I understand that: *
+    ☐ The information provided will be used to create my AI-powered portfolio
+    ☐ I may be contacted for a follow-up call to clarify details
+    ☐ Project timeline is 7-10 business days from deposit payment
+    ☐ I will receive a draft for review before final delivery
+
+[SUBMIT BUTTON]
+
+
+==============================================
+THANK YOU MESSAGE (After Submission)
+==============================================
+
+Thank you for completing the intake questionnaire!
+
+Next Steps:
+1. I'll review your information within 24 hours
+2. You'll receive an email with:
+   - Confirmation of package details
+   - Payment invoice
+   - Proposed timeline
+   - Scheduled consultation call (if included in your package)
+
+Questions? Email me at marc.larouche@gmail.com
+
+Looking forward to building your AI-powered portfolio!
+
+- Marc Larouche
+
+
+==============================================
+IMPLEMENTATION OPTIONS
+==============================================
+
+OPTION 1: Google Forms (FREE - RECOMMENDED FOR STARTING)
+• Create a Google Form with these questions
+• Responses go to a Google Sheet
+• Easy to manage and update
+• Free forever
+• Downside: Looks a bit basic
+
+OPTION 2: TypeForm (PROFESSIONAL - $29/month)
+• Beautiful, conversational interface
+• Logic jumps (skip irrelevant questions)
+• Professional branding
+• Better user experience
+• Payment integration available
+
+OPTION 3: Airtable Form (FREE tier available)
+• Powerful database backend
+• Better for managing client pipeline
+• Can automate workflows
+• Good middle ground
+
+OPTION 4: Embedded on Your Website
+• Most professional
+• Requires coding
+• Full control over design
+• Can integrate with payment processor
+
+MY RECOMMENDATION:
+Start with Google Forms (FREE) → Upgrade to TypeForm once you have 5+ clients
+

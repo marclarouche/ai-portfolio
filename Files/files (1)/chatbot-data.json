@@ -1,0 +1,60 @@
+// chatbot-data.json
+// Store all your Q&A pairs in a separate JSON file (easier to update)
+{
+  "responses": [
+    {
+      "id": 1,
+      "category": "experience",
+      "keywords": ["experience", "years", "long", "worked", "background"],
+      "response": "I have over 15 years of experience in cybersecurity and technical writing. I've worked with Fortune 500 companies, government agencies, and startups across various industries including finance, healthcare, and technology."
+    },
+    {
+      "id": 2,
+      "category": "skills",
+      "keywords": ["aws", "amazon", "cloud"],
+      "response": "I have extensive AWS experience including EC2, S3, Lambda, CloudWatch, IAM, and Security Hub. I've architected cloud security solutions and hold AWS certifications including Security Specialty."
+    },
+    {
+      "id": 3,
+      "category": "certifications",
+      "keywords": ["certifications", "certified", "certs", "credentials"],
+      "response": "I hold multiple certifications including CISSP, AWS Certified Security Specialty, CompTIA Security+, and CEH. I'm also certified in NIST frameworks and risk management."
+    },
+    {
+      "id": 4,
+      "category": "skills",
+      "keywords": ["python", "programming", "coding", "script"],
+      "response": "Yes, I'm proficient in Python for automation, security scripting, and data analysis. I also have experience with JavaScript, Bash, and PowerShell for various security and automation tasks."
+    },
+    {
+      "id": 5,
+      "category": "skills",
+      "keywords": ["grc", "governance", "compliance", "audit"],
+      "response": "I have strong GRC experience including policy development, compliance frameworks (NIST, ISO 27001, SOC 2), risk assessments, and audit management. I've led multiple compliance projects from start to finish."
+    },
+    {
+      "id": 6,
+      "category": "work-style",
+      "keywords": ["remote", "hybrid", "location", "relocate"],
+      "response": "I'm open to remote, hybrid, or on-site positions. I'm currently based in California but flexible on relocation for the right opportunity. I have extensive experience working with distributed teams."
+    },
+    {
+      "id": 7,
+      "category": "work-style",
+      "keywords": ["salary", "compensation", "pay", "rate"],
+      "response": "My salary expectations are competitive for my experience level and skill set, typically in the range of $120k-160k depending on the role, responsibilities, and location. I'm open to discussing total compensation including benefits."
+    },
+    {
+      "id": 8,
+      "category": "contact",
+      "keywords": ["contact", "reach", "email", "phone", "linkedin"],
+      "response": "The best way to reach me is via email at marc@marclarouche.com or through LinkedIn. I typically respond within 24 hours during business days."
+    },
+    {
+      "id": 99,
+      "category": "fallback",
+      "keywords": ["default"],
+      "response": "I'd be happy to discuss that with you! Could you rephrase your question or be more specific? You can also email me directly at marc@marclarouche.com for detailed answers."
+    }
+  ]
+}
